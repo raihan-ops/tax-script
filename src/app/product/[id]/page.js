@@ -3,13 +3,13 @@ import {Col, Row, Space, Tag} from "antd";
 import {promises as fs} from 'fs';
 import Image from "next/image";
 
-export async function getLocalData() {
-    const file = await fs.readFile(process.cwd() + '/src/app/db.json', 'utf8');
-    return JSON.parse(file)
-}
+// export async function getLocalData() {
+//     const file = await fs.readFile(process.cwd() + '/src/app/db.json', 'utf8');
+//     return JSON.parse(file)
+// }
 
 const Page = async ({params}) => {
-    const data = await getLocalData()
+    // const data = await getLocalData()
     // const result = data?.watches?.find((value) => value.id === parseInt(params.id))
 
 
