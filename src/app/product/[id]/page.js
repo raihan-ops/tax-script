@@ -10,26 +10,27 @@ export async function getLocalData() {
 
 const Page = async ({params}) => {
     const data = await getLocalData()
-    const result = data?.watches?.find((value) => value.id === parseInt(params.id))
+    // const result = data?.watches?.find((value) => value.id === parseInt(params.id))
 
 
     return (<div>
         <Row gutter={16}>
             <Col className="gutter-row" span={12}>
-                <Image src={result?.image}
-                       width={0}
-                       height={0}
-                       sizes="100vw"
-                       style={{ width: '100%', height: 'auto' }}
-                />
+                <p>Heloo</p>
+                {/*<Image src={result?.image}*/}
+                {/*       width={0}*/}
+                {/*       height={0}*/}
+                {/*       sizes="100vw"*/}
+                {/*       style={{ width: '100%', height: 'auto' }}*/}
+                {/* alt={"abc"}/>*/}
             </Col>
             <Col className="gutter-row" span={12}>
-                <h1 >{result?.name}</h1>
-                <Space size={[0, 8]} wrap>
-                    {result?.features?.map((data,index)=>
-                        <Tag color="default" key={index}>{data}</Tag>
-                    )}
-                </Space>
+                {/*<h1 >{result?.name}</h1>*/}
+                {/*<Space size={[0, 8]} wrap>*/}
+                {/*    {result?.features?.map((data,index)=>*/}
+                {/*        <Tag color="default" key={index}>{data}</Tag>*/}
+                {/*    )}*/}
+                {/*</Space>*/}
             </Col>
 
         </Row>
